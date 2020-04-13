@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="booking.css" />
+
+    <title>Rezervacija</title>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="app1">
+        <div class="movie-container">
+          <label class="moovietext"> Film :</label>
+          <select id="movie">
+            <option value="450">Južni vetar (450 rsd)</option>
+          </select>
+        </div>
+
+        <ul class="showcase">
+          <li>
+            <div class="seat"></div>
+            <small>Slobodna </small>
+          </li>
+
+          <li>
+            <div class="seat selected"></div>
+            <small>Izabrana</small>
+          </li>
+
+          <li>
+            <div class="seat occupied"></div>
+            <small>Zauzeta</small>
+          </li>
+        </ul>
+
+        <div class="container">
+          <div class="screen"></div>
+          <div class="row">
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+          </div>
+
+          <div class="row">
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num occupied"></div>
+            <div class="seat seat-num occupied"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+          </div>
+
+          <div class="row">
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+          </div>
+
+          <div class="row">
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num occupied"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+          </div>
+
+          <div class="row">
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num occupied"></div>
+            <div class="seat seat-num occupied"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+          </div>
+
+          <div class="row">
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num occupied"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+            <div class="seat seat-num"></div>
+          </div>
+        </div>
+
+        <p class="text">
+          Rezervisali ste <span id="count">0</span> sedišta. <br />
+          Ukupna cena karata iznosi <span id="total">0</span> dinara
+        </p>
+        <div tabindex="0" class="onclick-menu">
+          <ul class="onclick-menu-content">
+            <li>
+              Sedišta su Vam rezervisana.
+            </li>
+            <li>
+              Karte možete platiti na šalteru
+            </li>
+            <li>
+              <button onclick="alert('Trenutno ova opcija nije moguća')">
+                ili putem PayPal-a.
+              </button>
+            </li>
+          </ul>
+        </div>
+        <button class="nazad">
+          <a href="index.html">Odustani</a>
+        </button>
+        <script src="booking.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
